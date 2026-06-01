@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { apiEndpointLabel } from "../api/base";
 import { api } from "../api/client";
 import { useAuth } from "../context/AuthContext";
 import { isQaRole, isSettingsAdmin, roleLabel } from "../utils/roles";
@@ -8,13 +9,20 @@ export function Layout() {
   const { user, logout } = useAuth();
   const location = useLocation();
   const [liveOk, setLiveOk] = useState<boolean | null>(null);
+  const [dataDir, setDataDir] = useState<string | null>(null);
   const [navOpen, setNavOpen] = useState(false);
 
   useEffect(() => {
     api
       .health()
-      .then((h) => setLiveOk(h.status === "ok" && h.mode === "jira_live"))
-      .catch(() => setLiveOk(false));
+      .then((h) => {
+        setLiveOk(h.status === "ok" && h.mode === "jira_live");
+        setDataDir(h.data_dir ?? null);
+      })
+      .catch(() => {
+        setLiveOk(false);
+        setDataDir(null);
+      });
   }, []);
 
   useEffect(() => {
@@ -80,9 +88,18 @@ export function Layout() {
         </nav>
 
         <div className="sidebar-footer">
+          <p className="sidebar-api-endpoint muted" title="Đích API mà UI đang gọi">
+            BE: <code>{apiEndpointLabel()}</code>
+          </p>
           {liveOk !== null && (
             <p className={`sidebar-status${liveOk ? " ok" : " err"}`}>
               {liveOk ? "● Jira live" : "● API offline"}
+              {dataDir && liveOk && (
+                <small className="sidebar-data-dir" title={dataDir}>
+                  {" "}
+                  · {dataDir.replace(/^.*[\\/]/, "")}
+                </small>
+              )}
             </p>
           )}
           <div className="user-chip">

@@ -1,0 +1,4 @@
+{
+  "apiBaseUrl": "https://your-public-api.example.com",
+  "_note": "Copy thành config.json. Không có dấu / cuối. Dev local dùng Vite proxy — không cần file này."
+}

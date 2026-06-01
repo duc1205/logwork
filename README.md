@@ -63,3 +63,5 @@ Workflow [`.github/workflows/deploy-ui.yml`](./.github/workflows/deploy-ui.yml) 
 3. Server API: `LOGWORK_ALLOW_LAN=1` hoặc `LOGWORK_CORS_ORIGINS` có `https://duc1205.github.io`
 
 Pages chỉ host UI tĩnh — API uvicorn chạy riêng (tunnel/VPS).
+
+Hoặc sửa `ui/public/config.json` (`apiBaseUrl`) rồi push — không cần rebuild nếu chỉ đổi URL API.

@@ -23,6 +23,22 @@ npm run dev
 
 Mở http://localhost:5173
 
+### UI → Backend (kiểm tra kết nối)
+
+| Môi trường | UI gọi API như thế nào |
+|------------|------------------------|
+| **Dev** (`npm run dev`) | Luôn `fetch("/api/...")` → Vite proxy → `http://127.0.0.1:8000` |
+| **GitHub Pages** | `VITE_API_BASE_URL` lúc build **hoặc** `public/config.json` → `apiBaseUrl` |
+
+Trên sidebar / trang login có dòng **BE:** — xem UI đang trỏ đâu. **● Jira live** + tên thư mục `live` = BE trả lời OK.
+
+Nếu proxy sai port:
+
+```powershell
+$env:LOGWORK_API_PROXY="http://127.0.0.1:8001"
+npm run dev
+```
+
 ## Chia sẻ LAN — đồng nghiệp trong công ty test
 
 Trên **máy làm server** (PowerShell Admin nếu cần mở firewall):

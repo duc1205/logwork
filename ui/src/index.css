@@ -737,6 +737,22 @@ code {
   font-size: 0.85rem;
 }
 
+.sidebar-api-endpoint {
+  font-size: 0.7rem;
+  margin: 0 0 0.5rem;
+  line-height: 1.35;
+  word-break: break-all;
+}
+
+.sidebar-api-endpoint code {
+  font-size: 0.68rem;
+}
+
+.sidebar-data-dir {
+  display: block;
+  opacity: 0.85;
+}
+
 .sidebar-status {
   font-size: 0.75rem;
   margin: 0 0 0.75rem;

@@ -1,0 +1,10 @@
+[
+  {
+    "employee_id": "vuthif",
+    "ot_date": "2026-05-20",
+    "ot_hours": 2,
+    "reason": "Release hotfix",
+    "status": "approved",
+    "approved_by": "manager01"
+  }
+]

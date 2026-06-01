@@ -1,0 +1,27 @@
+{
+  "description": "Ví dụ SRS §10.1 — NV001 tuần 19–23/05/2026: T2=16h, T6=0h → bù trừ",
+  "anchor_date": "2026-05-20",
+  "employee": {
+    "account_id": "nv001",
+    "display_name": "NV001",
+    "email": "nv001@example.com"
+  },
+  "entries": [
+    {"employee_id": "nv001", "work_date": "2026-05-19", "hours": 16.0},
+    {"employee_id": "nv001", "work_date": "2026-05-20", "hours": 8.0},
+    {"employee_id": "nv001", "work_date": "2026-05-21", "hours": 8.0},
+    {"employee_id": "nv001", "work_date": "2026-05-22", "hours": 8.0},
+    {"employee_id": "nv001", "work_date": "2026-05-23", "hours": 0.0}
+  ],
+  "holidays": [],
+  "leaves": [],
+  "overtime": [],
+  "expected": {
+    "total_actual": 40.0,
+    "total_required": 40.0,
+    "compensation_pairs": 1,
+    "layer1_violations": 2,
+    "penalty_min": 20000,
+    "note_contains": ["Bù trừ", "Không log"]
+  }
+}

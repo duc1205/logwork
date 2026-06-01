@@ -1,0 +1,56 @@
+[
+  {
+    "account_id": "nguyenvana",
+    "display_name": "Nguyễn Văn A",
+    "email": "nguyenvana@tinhvan.vn",
+    "team": "Dev",
+    "center": "TT-Digital",
+    "expected_hours_per_day": 8,
+    "target_md_week": 5
+  },
+  {
+    "account_id": "tranthib",
+    "display_name": "Trần Thị B",
+    "email": "tranthib@tinhvan.vn",
+    "team": "QA",
+    "center": "TT-Digital",
+    "expected_hours_per_day": 8,
+    "target_md_week": 5
+  },
+  {
+    "account_id": "levanc",
+    "display_name": "Lê Văn C",
+    "email": "levanc@tinhvan.vn",
+    "team": "Dev",
+    "center": "TT-Platform",
+    "expected_hours_per_day": 8,
+    "target_md_week": 5
+  },
+  {
+    "account_id": "phamthid",
+    "display_name": "Phạm Thị D",
+    "email": "phamthid@tinhvan.vn",
+    "team": "BA",
+    "center": "TT-Platform",
+    "expected_hours_per_day": 8,
+    "target_md_week": 5
+  },
+  {
+    "account_id": "hoangvane",
+    "display_name": "Hoàng Văn E",
+    "email": "hoangvane@tinhvan.vn",
+    "team": "Dev",
+    "center": "UNASSIGNED",
+    "expected_hours_per_day": 8,
+    "target_md_week": 5
+  },
+  {
+    "account_id": "vuthif",
+    "display_name": "Vũ Thị F",
+    "email": "vuthif@tinhvan.vn",
+    "team": "Dev",
+    "center": "TT-Digital",
+    "expected_hours_per_day": 8,
+    "target_md_week": 5
+  }
+]

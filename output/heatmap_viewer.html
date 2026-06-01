@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <title>Logwork Heatmap</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --panel: #1a2332;
+      --text: #e7ecf3;
+      --muted: #8b9cb3;
+      --border: #2d3a4f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 1.5rem;
+    }
+    h1 { margin: 0 0 0.25rem; font-size: 1.35rem; }
+    .meta { color: var(--muted); margin-bottom: 1rem; font-size: 0.9rem; }
+    .toolbar {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    input[type=file], button {
+      background: var(--panel);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.45rem 0.75rem;
+    }
+    button { cursor: pointer; }
+    button:hover { border-color: #5b8def; }
+    .legend { display: flex; gap: 0.75rem; flex-wrap: wrap; font-size: 0.85rem; }
+    .legend span { display: inline-flex; align-items: center; gap: 0.35rem; }
+    .swatch { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      font-size: 0.82rem;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.35rem 0.4rem;
+      text-align: center;
+      min-width: 2.4rem;
+    }
+    th { background: #121a24; position: sticky; top: 0; z-index: 1; }
+    td.name { text-align: left; min-width: 9rem; position: sticky; left: 0; background: #121a24; z-index: 1; }
+    th.corner { left: 0; z-index: 2; }
+    .cell { border-radius: 4px; padding: 0.2rem 0; font-weight: 600; }
+    .green { background: #1f7a4d; }
+    .lightgreen { background: #3d8f5f; }
+    .yellow { background: #b58b1a; color: #111; }
+    .orange { background: #c45d1e; }
+    .red { background: #b3261e; }
+    .purple { background: #6b4fbb; }
+    .gray { background: #4a5568; color: #ddd; }
+    .empty { color: var(--muted); }
+    #hint { color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <h1>Logwork Heatmap</h1>
+  <p class="meta">Mo file JSON tu <code>logwork/output/heatmap_*.json</code></p>
+  <div class="toolbar">
+    <input type="file" id="file" accept=".json,application/json" />
+    <button type="button" id="demo">Tai heatmap mock (2026-05)</button>
+    <div class="legend">
+      <span><i class="swatch green"></i> OK</span>
+      <span><i class="swatch yellow"></i> Thieu</span>
+      <span><i class="swatch red"></i> Khong log</span>
+      <span><i class="swatch purple"></i> Bu tru</span>
+      <span><i class="swatch gray"></i> Nghi</span>
+    </div>
+  </div>
+  <p id="hint">Chon file JSON hoac bam Tai heatmap mock.</p>
+  <div id="table-wrap"></div>
+  <script>
+    const COLOR_CLASS = {
+      green: "green",
+      lightgreen: "lightgreen",
+      yellow: "yellow",
+      orange: "orange",
+      red: "red",
+      purple: "purple",
+      gray: "gray",
+    };
+
+    function renderHeatmap(data) {
+      const dates = [...new Set(data.cells.map(c => c.date))].sort();
+      const employees = [];
+      const byEmp = new Map();
+      for (const cell of data.cells) {
+        if (!byEmp.has(cell.employee_id)) {
+          byEmp.set(cell.employee_id, { id: cell.employee_id, name: cell.display_name, map: new Map() });
+          employees.push(byEmp.get(cell.employee_id));
+        }
+        byEmp.get(cell.employee_id).map.set(cell.date, cell);
+      }
+      employees.sort((a, b) => a.name.localeCompare(b.name));
+
+      let html = "<table><thead><tr><th class='corner'>Nhan vien</th>";
+      for (const d of dates) {
+        const dd = d.slice(8, 10) + "/" + d.slice(5, 7);
+        html += `<th title="${d}">${dd}</th>`;
+      }
+      html += "</tr></thead><tbody>";
+
+      for (const emp of employees) {
+        html += `<tr><td class="name">${emp.name}<br><small>${emp.id}</small></td>`;
+        for (const d of dates) {
+          const cell = emp.map.get(d);
+          if (!cell) {
+            html += "<td class='empty'>-</td>";
+            continue;
+          }
+          const cls = COLOR_CLASS[cell.color] || "gray";
+          const label = cell.actual.toFixed(1) + "h";
+          const title = `${cell.status} | req ${cell.required}h | pen ${cell.penalty}`;
+          html += `<td><div class="cell ${cls}" title="${title}">${label}</div></td>`;
+        }
+        html += "</tr>";
+      }
+      html += "</tbody></table>";
+      document.getElementById("table-wrap").innerHTML = html;
+      document.getElementById("hint").textContent =
+        `Period ${data.week_start} .. ${data.week_end} — ${employees.length} NV, ${dates.length} ngay`;
+    }
+
+    async function loadJson(file) {
+      const text = await file.text();
+      renderHeatmap(JSON.parse(text));
+    }
+
+    document.getElementById("file").addEventListener("change", (ev) => {
+      const file = ev.target.files[0];
+      if (file) loadJson(file);
+    });
+
+    document.getElementById("demo").addEventListener("click", async () => {
+      try {
+        const resp = await fetch("heatmap_2026-05.json");
+        if (!resp.ok) throw new Error("Khong tim thay heatmap_2026-05.json trong cung thu muc");
+        renderHeatmap(await resp.json());
+      } catch (err) {
+        document.getElementById("hint").textContent =
+          "Dat file HTML cung thu muc voi heatmap JSON, hoac chon file thu cong.";
+      }
+    });
+  </script>
+</body>
+</html>

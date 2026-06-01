@@ -1,0 +1,62 @@
+{
+  "week_start": "2026-06-01",
+  "week_end": "2026-06-07",
+  "generated_at": "2026-06-01T03:16:27.211004+00:00",
+  "items": [
+    {
+      "id": "e500e63d-99ff-4931-9b5d-fc1ce8f7b82f",
+      "employee_id": "ducnm1",
+      "display_name": "Nguyễn Minh Đức",
+      "subject": "[Logwork] missing_day — 2026-06-01",
+      "body": "Chào Nguyễn Minh Đức,\nVui lòng kiểm tra logwork ngày 01/06/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).\nCập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!",
+      "channel": "teams",
+      "work_date": "2026-06-01",
+      "discrepancy_type": "missing_day",
+      "created_at": "2026-06-01T03:16:27.211004+00:00"
+    },
+    {
+      "id": "a36b97af-e5e1-4976-b5ef-b234c42ca11d",
+      "employee_id": "ducnm1",
+      "display_name": "Nguyễn Minh Đức",
+      "subject": "[Logwork] missing_day — 2026-06-02",
+      "body": "Chào Nguyễn Minh Đức,\nVui lòng kiểm tra logwork ngày 02/06/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).\nCập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!",
+      "channel": "teams",
+      "work_date": "2026-06-02",
+      "discrepancy_type": "missing_day",
+      "created_at": "2026-06-01T03:16:27.211004+00:00"
+    },
+    {
+      "id": "293f7194-3294-424c-9c60-ba04154aa987",
+      "employee_id": "ducnm1",
+      "display_name": "Nguyễn Minh Đức",
+      "subject": "[Logwork] missing_day — 2026-06-03",
+      "body": "Chào Nguyễn Minh Đức,\nVui lòng kiểm tra logwork ngày 03/06/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).\nCập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!",
+      "channel": "teams",
+      "work_date": "2026-06-03",
+      "discrepancy_type": "missing_day",
+      "created_at": "2026-06-01T03:16:27.211004+00:00"
+    },
+    {
+      "id": "a5febbba-57ae-409b-aaf9-468b039b4c4f",
+      "employee_id": "ducnm1",
+      "display_name": "Nguyễn Minh Đức",
+      "subject": "[Logwork] missing_day — 2026-06-04",
+      "body": "Chào Nguyễn Minh Đức,\nVui lòng kiểm tra logwork ngày 04/06/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).\nCập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!",
+      "channel": "teams",
+      "work_date": "2026-06-04",
+      "discrepancy_type": "missing_day",
+      "created_at": "2026-06-01T03:16:27.211004+00:00"
+    },
+    {
+      "id": "98ddb90b-0494-4380-b3ee-b0f4366d89c4",
+      "employee_id": "ducnm1",
+      "display_name": "Nguyễn Minh Đức",
+      "subject": "[Logwork] missing_day — 2026-06-05",
+      "body": "Chào Nguyễn Minh Đức,\nVui lòng kiểm tra logwork ngày 05/06/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).\nCập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!",
+      "channel": "teams",
+      "work_date": "2026-06-05",
+      "discrepancy_type": "missing_day",
+      "created_at": "2026-06-01T03:16:27.211004+00:00"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+[
+  {
+    "employee_id": "phamthid",
+    "leave_date": "2026-05-21",
+    "leave_type": "annual",
+    "source": "excel",
+    "dedup_status": "ok"
+  }
+]

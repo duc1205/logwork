@@ -1,0 +1,7 @@
+﻿Account,Full Name,Holiday,Actual (MD),Required (MD),Missed (MD),Penalty (VND),Target (MD),Note
+nguyenvana,Nguyễn Văn A,0,5.00,5.00,0.00,0,5.0,
+tranthib,Trần Thị B,0,3.50,5.00,1.50,30000,5.0,Không log ngày 18/05; Log thiếu 4h ngày 20/05
+levanc,Lê Văn C,0,5.00,5.00,1.00,20000,5.0,Không log ngày 22/05; Bù trừ: 22/05 thiếu 8h ↔ 18/05 thừa 8h
+phamthid,Phạm Thị D,0,4.00,4.00,0.00,0,5.0,
+hoangvane,Hoàng Văn E,0,5.25,5.00,0.00,0,5.0,Log thừa 2h ngày 19/05
+vuthif,Vũ Thị F,0,5.25,5.00,0.00,0,5.0,

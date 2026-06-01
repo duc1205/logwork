@@ -1,0 +1,576 @@
+# Logwork reminders — generated 2026-06-01T11:40:10
+# Total: 96
+
+--- [1] APP -> Nguyễn Văn A (nguyenvana) ---
+Subject: [Logwork] missing_day — 2026-05-04
+Chào Nguyễn Văn A,
+Vui lòng kiểm tra logwork ngày 04/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [2] APP -> Nguyễn Văn A (nguyenvana) ---
+Subject: [Logwork] missing_day — 2026-05-05
+Chào Nguyễn Văn A,
+Vui lòng kiểm tra logwork ngày 05/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [3] APP -> Nguyễn Văn A (nguyenvana) ---
+Subject: [Logwork] missing_day — 2026-05-06
+Chào Nguyễn Văn A,
+Vui lòng kiểm tra logwork ngày 06/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [4] APP -> Nguyễn Văn A (nguyenvana) ---
+Subject: [Logwork] missing_day — 2026-05-07
+Chào Nguyễn Văn A,
+Vui lòng kiểm tra logwork ngày 07/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [5] APP -> Nguyễn Văn A (nguyenvana) ---
+Subject: [Logwork] missing_day — 2026-05-08
+Chào Nguyễn Văn A,
+Vui lòng kiểm tra logwork ngày 08/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [6] APP -> Nguyễn Văn A (nguyenvana) ---
+Subject: [Logwork] missing_day — 2026-05-11
+Chào Nguyễn Văn A,
+Vui lòng kiểm tra logwork ngày 11/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [7] APP -> Nguyễn Văn A (nguyenvana) ---
+Subject: [Logwork] missing_day — 2026-05-12
+Chào Nguyễn Văn A,
+Vui lòng kiểm tra logwork ngày 12/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [8] APP -> Nguyễn Văn A (nguyenvana) ---
+Subject: [Logwork] missing_day — 2026-05-13
+Chào Nguyễn Văn A,
+Vui lòng kiểm tra logwork ngày 13/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [9] APP -> Nguyễn Văn A (nguyenvana) ---
+Subject: [Logwork] missing_day — 2026-05-14
+Chào Nguyễn Văn A,
+Vui lòng kiểm tra logwork ngày 14/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [10] APP -> Nguyễn Văn A (nguyenvana) ---
+Subject: [Logwork] missing_day — 2026-05-15
+Chào Nguyễn Văn A,
+Vui lòng kiểm tra logwork ngày 15/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [11] APP -> Nguyễn Văn A (nguyenvana) ---
+Subject: [Logwork] missing_day — 2026-05-25
+Chào Nguyễn Văn A,
+Vui lòng kiểm tra logwork ngày 25/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [12] APP -> Nguyễn Văn A (nguyenvana) ---
+Subject: [Logwork] missing_day — 2026-05-26
+Chào Nguyễn Văn A,
+Vui lòng kiểm tra logwork ngày 26/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [13] APP -> Nguyễn Văn A (nguyenvana) ---
+Subject: [Logwork] missing_day — 2026-05-27
+Chào Nguyễn Văn A,
+Vui lòng kiểm tra logwork ngày 27/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [14] APP -> Nguyễn Văn A (nguyenvana) ---
+Subject: [Logwork] missing_day — 2026-05-28
+Chào Nguyễn Văn A,
+Vui lòng kiểm tra logwork ngày 28/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [15] APP -> Nguyễn Văn A (nguyenvana) ---
+Subject: [Logwork] missing_day — 2026-05-29
+Chào Nguyễn Văn A,
+Vui lòng kiểm tra logwork ngày 29/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [16] APP -> Trần Thị B (tranthib) ---
+Subject: [Logwork] missing_day — 2026-05-04
+Chào Trần Thị B,
+Vui lòng kiểm tra logwork ngày 04/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [17] APP -> Trần Thị B (tranthib) ---
+Subject: [Logwork] missing_day — 2026-05-05
+Chào Trần Thị B,
+Vui lòng kiểm tra logwork ngày 05/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [18] APP -> Trần Thị B (tranthib) ---
+Subject: [Logwork] missing_day — 2026-05-06
+Chào Trần Thị B,
+Vui lòng kiểm tra logwork ngày 06/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [19] APP -> Trần Thị B (tranthib) ---
+Subject: [Logwork] missing_day — 2026-05-07
+Chào Trần Thị B,
+Vui lòng kiểm tra logwork ngày 07/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [20] APP -> Trần Thị B (tranthib) ---
+Subject: [Logwork] missing_day — 2026-05-08
+Chào Trần Thị B,
+Vui lòng kiểm tra logwork ngày 08/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [21] APP -> Trần Thị B (tranthib) ---
+Subject: [Logwork] missing_day — 2026-05-11
+Chào Trần Thị B,
+Vui lòng kiểm tra logwork ngày 11/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [22] APP -> Trần Thị B (tranthib) ---
+Subject: [Logwork] missing_day — 2026-05-12
+Chào Trần Thị B,
+Vui lòng kiểm tra logwork ngày 12/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [23] APP -> Trần Thị B (tranthib) ---
+Subject: [Logwork] missing_day — 2026-05-13
+Chào Trần Thị B,
+Vui lòng kiểm tra logwork ngày 13/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [24] APP -> Trần Thị B (tranthib) ---
+Subject: [Logwork] missing_day — 2026-05-14
+Chào Trần Thị B,
+Vui lòng kiểm tra logwork ngày 14/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [25] APP -> Trần Thị B (tranthib) ---
+Subject: [Logwork] missing_day — 2026-05-15
+Chào Trần Thị B,
+Vui lòng kiểm tra logwork ngày 15/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [26] APP -> Trần Thị B (tranthib) ---
+Subject: [Logwork] missing_day — 2026-05-18
+Chào Trần Thị B,
+Vui lòng kiểm tra logwork ngày 18/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [27] APP -> Trần Thị B (tranthib) ---
+Subject: [Logwork] under_hours — 2026-05-20
+Chào Trần Thị B,
+Vui lòng kiểm tra logwork ngày 20/05/2026: bạn đang thiếu 4.0 giờ (đã log 4.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [28] APP -> Trần Thị B (tranthib) ---
+Subject: [Logwork] missing_day — 2026-05-25
+Chào Trần Thị B,
+Vui lòng kiểm tra logwork ngày 25/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [29] APP -> Trần Thị B (tranthib) ---
+Subject: [Logwork] missing_day — 2026-05-26
+Chào Trần Thị B,
+Vui lòng kiểm tra logwork ngày 26/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [30] APP -> Trần Thị B (tranthib) ---
+Subject: [Logwork] missing_day — 2026-05-27
+Chào Trần Thị B,
+Vui lòng kiểm tra logwork ngày 27/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [31] APP -> Trần Thị B (tranthib) ---
+Subject: [Logwork] missing_day — 2026-05-28
+Chào Trần Thị B,
+Vui lòng kiểm tra logwork ngày 28/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [32] APP -> Trần Thị B (tranthib) ---
+Subject: [Logwork] missing_day — 2026-05-29
+Chào Trần Thị B,
+Vui lòng kiểm tra logwork ngày 29/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [33] APP -> Lê Văn C (levanc) ---
+Subject: [Logwork] missing_day — 2026-05-04
+Chào Lê Văn C,
+Vui lòng kiểm tra logwork ngày 04/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [34] APP -> Lê Văn C (levanc) ---
+Subject: [Logwork] missing_day — 2026-05-05
+Chào Lê Văn C,
+Vui lòng kiểm tra logwork ngày 05/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [35] APP -> Lê Văn C (levanc) ---
+Subject: [Logwork] missing_day — 2026-05-06
+Chào Lê Văn C,
+Vui lòng kiểm tra logwork ngày 06/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [36] APP -> Lê Văn C (levanc) ---
+Subject: [Logwork] missing_day — 2026-05-07
+Chào Lê Văn C,
+Vui lòng kiểm tra logwork ngày 07/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [37] APP -> Lê Văn C (levanc) ---
+Subject: [Logwork] missing_day — 2026-05-08
+Chào Lê Văn C,
+Vui lòng kiểm tra logwork ngày 08/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [38] APP -> Lê Văn C (levanc) ---
+Subject: [Logwork] missing_day — 2026-05-11
+Chào Lê Văn C,
+Vui lòng kiểm tra logwork ngày 11/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [39] APP -> Lê Văn C (levanc) ---
+Subject: [Logwork] missing_day — 2026-05-12
+Chào Lê Văn C,
+Vui lòng kiểm tra logwork ngày 12/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [40] APP -> Lê Văn C (levanc) ---
+Subject: [Logwork] missing_day — 2026-05-13
+Chào Lê Văn C,
+Vui lòng kiểm tra logwork ngày 13/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [41] APP -> Lê Văn C (levanc) ---
+Subject: [Logwork] missing_day — 2026-05-14
+Chào Lê Văn C,
+Vui lòng kiểm tra logwork ngày 14/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [42] APP -> Lê Văn C (levanc) ---
+Subject: [Logwork] missing_day — 2026-05-15
+Chào Lê Văn C,
+Vui lòng kiểm tra logwork ngày 15/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [43] APP -> Lê Văn C (levanc) ---
+Subject: [Logwork] over_hours — 2026-05-18
+Chào Lê Văn C,
+Ngày 18/05/2026 bạn log 16.0h, vượt chuẩn 8.0h (8.0h). Vui lòng rà soát lại timesheet.
+
+--- [44] APP -> Lê Văn C (levanc) ---
+Subject: [Logwork] missing_day — 2026-05-22
+Chào Lê Văn C,
+Vui lòng kiểm tra logwork ngày 22/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [45] APP -> Lê Văn C (levanc) ---
+Subject: [Logwork] missing_day — 2026-05-25
+Chào Lê Văn C,
+Vui lòng kiểm tra logwork ngày 25/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [46] APP -> Lê Văn C (levanc) ---
+Subject: [Logwork] missing_day — 2026-05-26
+Chào Lê Văn C,
+Vui lòng kiểm tra logwork ngày 26/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [47] APP -> Lê Văn C (levanc) ---
+Subject: [Logwork] missing_day — 2026-05-27
+Chào Lê Văn C,
+Vui lòng kiểm tra logwork ngày 27/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [48] APP -> Lê Văn C (levanc) ---
+Subject: [Logwork] missing_day — 2026-05-28
+Chào Lê Văn C,
+Vui lòng kiểm tra logwork ngày 28/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [49] APP -> Lê Văn C (levanc) ---
+Subject: [Logwork] missing_day — 2026-05-29
+Chào Lê Văn C,
+Vui lòng kiểm tra logwork ngày 29/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [50] APP -> Lê Văn C (levanc) ---
+Subject: [Logwork] compensation — 2026-05-22
+Chào Lê Văn C,
+Phát hiện bù trừ giờ trong tuần: Bù trừ: 2026-05-22 thiếu 8.0h ↔ 2026-05-18 thừa 8.0h (high)
+Vui lòng rà soát và điều chỉnh worklog trên Jira.
+
+--- [51] APP -> Phạm Thị D (phamthid) ---
+Subject: [Logwork] missing_day — 2026-05-04
+Chào Phạm Thị D,
+Vui lòng kiểm tra logwork ngày 04/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [52] APP -> Phạm Thị D (phamthid) ---
+Subject: [Logwork] missing_day — 2026-05-05
+Chào Phạm Thị D,
+Vui lòng kiểm tra logwork ngày 05/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [53] APP -> Phạm Thị D (phamthid) ---
+Subject: [Logwork] missing_day — 2026-05-06
+Chào Phạm Thị D,
+Vui lòng kiểm tra logwork ngày 06/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [54] APP -> Phạm Thị D (phamthid) ---
+Subject: [Logwork] missing_day — 2026-05-07
+Chào Phạm Thị D,
+Vui lòng kiểm tra logwork ngày 07/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [55] APP -> Phạm Thị D (phamthid) ---
+Subject: [Logwork] missing_day — 2026-05-08
+Chào Phạm Thị D,
+Vui lòng kiểm tra logwork ngày 08/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [56] APP -> Phạm Thị D (phamthid) ---
+Subject: [Logwork] missing_day — 2026-05-11
+Chào Phạm Thị D,
+Vui lòng kiểm tra logwork ngày 11/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [57] APP -> Phạm Thị D (phamthid) ---
+Subject: [Logwork] missing_day — 2026-05-12
+Chào Phạm Thị D,
+Vui lòng kiểm tra logwork ngày 12/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [58] APP -> Phạm Thị D (phamthid) ---
+Subject: [Logwork] missing_day — 2026-05-13
+Chào Phạm Thị D,
+Vui lòng kiểm tra logwork ngày 13/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [59] APP -> Phạm Thị D (phamthid) ---
+Subject: [Logwork] missing_day — 2026-05-14
+Chào Phạm Thị D,
+Vui lòng kiểm tra logwork ngày 14/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [60] APP -> Phạm Thị D (phamthid) ---
+Subject: [Logwork] missing_day — 2026-05-15
+Chào Phạm Thị D,
+Vui lòng kiểm tra logwork ngày 15/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [61] APP -> Phạm Thị D (phamthid) ---
+Subject: [Logwork] missing_day — 2026-05-25
+Chào Phạm Thị D,
+Vui lòng kiểm tra logwork ngày 25/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [62] APP -> Phạm Thị D (phamthid) ---
+Subject: [Logwork] missing_day — 2026-05-26
+Chào Phạm Thị D,
+Vui lòng kiểm tra logwork ngày 26/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [63] APP -> Phạm Thị D (phamthid) ---
+Subject: [Logwork] missing_day — 2026-05-27
+Chào Phạm Thị D,
+Vui lòng kiểm tra logwork ngày 27/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [64] APP -> Phạm Thị D (phamthid) ---
+Subject: [Logwork] missing_day — 2026-05-28
+Chào Phạm Thị D,
+Vui lòng kiểm tra logwork ngày 28/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [65] APP -> Phạm Thị D (phamthid) ---
+Subject: [Logwork] missing_day — 2026-05-29
+Chào Phạm Thị D,
+Vui lòng kiểm tra logwork ngày 29/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [66] APP -> Hoàng Văn E (hoangvane) ---
+Subject: [Logwork] missing_day — 2026-05-04
+Chào Hoàng Văn E,
+Vui lòng kiểm tra logwork ngày 04/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [67] APP -> Hoàng Văn E (hoangvane) ---
+Subject: [Logwork] missing_day — 2026-05-05
+Chào Hoàng Văn E,
+Vui lòng kiểm tra logwork ngày 05/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [68] APP -> Hoàng Văn E (hoangvane) ---
+Subject: [Logwork] missing_day — 2026-05-06
+Chào Hoàng Văn E,
+Vui lòng kiểm tra logwork ngày 06/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [69] APP -> Hoàng Văn E (hoangvane) ---
+Subject: [Logwork] missing_day — 2026-05-07
+Chào Hoàng Văn E,
+Vui lòng kiểm tra logwork ngày 07/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [70] APP -> Hoàng Văn E (hoangvane) ---
+Subject: [Logwork] missing_day — 2026-05-08
+Chào Hoàng Văn E,
+Vui lòng kiểm tra logwork ngày 08/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [71] APP -> Hoàng Văn E (hoangvane) ---
+Subject: [Logwork] missing_day — 2026-05-11
+Chào Hoàng Văn E,
+Vui lòng kiểm tra logwork ngày 11/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [72] APP -> Hoàng Văn E (hoangvane) ---
+Subject: [Logwork] missing_day — 2026-05-12
+Chào Hoàng Văn E,
+Vui lòng kiểm tra logwork ngày 12/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [73] APP -> Hoàng Văn E (hoangvane) ---
+Subject: [Logwork] missing_day — 2026-05-13
+Chào Hoàng Văn E,
+Vui lòng kiểm tra logwork ngày 13/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [74] APP -> Hoàng Văn E (hoangvane) ---
+Subject: [Logwork] missing_day — 2026-05-14
+Chào Hoàng Văn E,
+Vui lòng kiểm tra logwork ngày 14/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [75] APP -> Hoàng Văn E (hoangvane) ---
+Subject: [Logwork] missing_day — 2026-05-15
+Chào Hoàng Văn E,
+Vui lòng kiểm tra logwork ngày 15/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [76] APP -> Hoàng Văn E (hoangvane) ---
+Subject: [Logwork] over_hours — 2026-05-19
+Chào Hoàng Văn E,
+Ngày 19/05/2026 bạn log 10.0h, vượt chuẩn 8.0h (2.0h). Vui lòng rà soát lại timesheet.
+
+--- [77] APP -> Hoàng Văn E (hoangvane) ---
+Subject: [Logwork] missing_day — 2026-05-25
+Chào Hoàng Văn E,
+Vui lòng kiểm tra logwork ngày 25/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [78] APP -> Hoàng Văn E (hoangvane) ---
+Subject: [Logwork] missing_day — 2026-05-26
+Chào Hoàng Văn E,
+Vui lòng kiểm tra logwork ngày 26/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [79] APP -> Hoàng Văn E (hoangvane) ---
+Subject: [Logwork] missing_day — 2026-05-27
+Chào Hoàng Văn E,
+Vui lòng kiểm tra logwork ngày 27/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [80] APP -> Hoàng Văn E (hoangvane) ---
+Subject: [Logwork] missing_day — 2026-05-28
+Chào Hoàng Văn E,
+Vui lòng kiểm tra logwork ngày 28/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [81] APP -> Hoàng Văn E (hoangvane) ---
+Subject: [Logwork] missing_day — 2026-05-29
+Chào Hoàng Văn E,
+Vui lòng kiểm tra logwork ngày 29/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [82] APP -> Vũ Thị F (vuthif) ---
+Subject: [Logwork] missing_day — 2026-05-04
+Chào Vũ Thị F,
+Vui lòng kiểm tra logwork ngày 04/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [83] APP -> Vũ Thị F (vuthif) ---
+Subject: [Logwork] missing_day — 2026-05-05
+Chào Vũ Thị F,
+Vui lòng kiểm tra logwork ngày 05/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [84] APP -> Vũ Thị F (vuthif) ---
+Subject: [Logwork] missing_day — 2026-05-06
+Chào Vũ Thị F,
+Vui lòng kiểm tra logwork ngày 06/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [85] APP -> Vũ Thị F (vuthif) ---
+Subject: [Logwork] missing_day — 2026-05-07
+Chào Vũ Thị F,
+Vui lòng kiểm tra logwork ngày 07/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [86] APP -> Vũ Thị F (vuthif) ---
+Subject: [Logwork] missing_day — 2026-05-08
+Chào Vũ Thị F,
+Vui lòng kiểm tra logwork ngày 08/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [87] APP -> Vũ Thị F (vuthif) ---
+Subject: [Logwork] missing_day — 2026-05-11
+Chào Vũ Thị F,
+Vui lòng kiểm tra logwork ngày 11/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [88] APP -> Vũ Thị F (vuthif) ---
+Subject: [Logwork] missing_day — 2026-05-12
+Chào Vũ Thị F,
+Vui lòng kiểm tra logwork ngày 12/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [89] APP -> Vũ Thị F (vuthif) ---
+Subject: [Logwork] missing_day — 2026-05-13
+Chào Vũ Thị F,
+Vui lòng kiểm tra logwork ngày 13/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [90] APP -> Vũ Thị F (vuthif) ---
+Subject: [Logwork] missing_day — 2026-05-14
+Chào Vũ Thị F,
+Vui lòng kiểm tra logwork ngày 14/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [91] APP -> Vũ Thị F (vuthif) ---
+Subject: [Logwork] missing_day — 2026-05-15
+Chào Vũ Thị F,
+Vui lòng kiểm tra logwork ngày 15/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [92] APP -> Vũ Thị F (vuthif) ---
+Subject: [Logwork] missing_day — 2026-05-25
+Chào Vũ Thị F,
+Vui lòng kiểm tra logwork ngày 25/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [93] APP -> Vũ Thị F (vuthif) ---
+Subject: [Logwork] missing_day — 2026-05-26
+Chào Vũ Thị F,
+Vui lòng kiểm tra logwork ngày 26/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [94] APP -> Vũ Thị F (vuthif) ---
+Subject: [Logwork] missing_day — 2026-05-27
+Chào Vũ Thị F,
+Vui lòng kiểm tra logwork ngày 27/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [95] APP -> Vũ Thị F (vuthif) ---
+Subject: [Logwork] missing_day — 2026-05-28
+Chào Vũ Thị F,
+Vui lòng kiểm tra logwork ngày 28/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [96] APP -> Vũ Thị F (vuthif) ---
+Subject: [Logwork] missing_day — 2026-05-29
+Chào Vũ Thị F,
+Vui lòng kiểm tra logwork ngày 29/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!

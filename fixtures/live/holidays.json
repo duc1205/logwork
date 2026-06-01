@@ -1,0 +1,12 @@
+[
+  {"holiday_date": "2026-01-01", "name": "Tết Dương lịch", "is_company_wide": true},
+  {"holiday_date": "2026-02-16", "name": "Tết Nguyên đán", "is_company_wide": true},
+  {"holiday_date": "2026-02-17", "name": "Tết Nguyên đán", "is_company_wide": true},
+  {"holiday_date": "2026-02-18", "name": "Tết Nguyên đán", "is_company_wide": true},
+  {"holiday_date": "2026-02-19", "name": "Tết Nguyên đán", "is_company_wide": true},
+  {"holiday_date": "2026-02-20", "name": "Tết Nguyên đán", "is_company_wide": true},
+  {"holiday_date": "2026-04-27", "name": "Giỗ Tổ Hùng Vương", "is_company_wide": true},
+  {"holiday_date": "2026-04-30", "name": "Ngày Chiến thắng", "is_company_wide": true},
+  {"holiday_date": "2026-05-01", "name": "Quốc tế Lao động", "is_company_wide": true},
+  {"holiday_date": "2026-09-02", "name": "Quốc khánh", "is_company_wide": true}
+]

@@ -1,0 +1,9 @@
+job=monthly_close
+ran_at=2026-06-01T10:23:44.216054
+period=2026-05
+employees=6
+penalty=1850000
+summary=D:\TINHVAN\HVKHQS-AI\logwork\output\logwork_2026-05_summary.csv
+compensation=D:\TINHVAN\HVKHQS-AI\logwork\output\logwork_2026-05_compensation.csv
+heatmap=D:\TINHVAN\HVKHQS-AI\logwork\output\heatmap_2026-05.json
+reminders=D:\TINHVAN\HVKHQS-AI\logwork\output\reminders_2026-05.txt

@@ -1,0 +1,4 @@
+Account,Full Name,Holiday,Actual (MD),Required (MD),Missed (MD),Penalty (VND),Target (MD),Note
+chuongnv,Chuong NV,1,16.00,21.00,5.00,100000,21,"Khong log cac ngay 21, 22, 25, 26, 27/05"
+lienntq,Lien NTQ,2,15.62,18.00,2.38,47600,21,"Khong log cac ngay 21, 22, 25, 26, 27/05"
+anhntv,Anh NTV,0,0.00,0.00,0.00,0,21,"Nghi che do thai san"

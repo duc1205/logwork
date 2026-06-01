@@ -1,0 +1,36 @@
+# Logwork reminders — generated 2026-06-01T08:23:27
+# Total: 6
+
+--- [1] TEAMS -> Tran Thi B (tranthib) ---
+Subject: [Logwork] missing_day — 2026-05-18
+Chào Tran Thi B,
+Vui lòng kiểm tra logwork ngày 18/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [2] TEAMS -> Tran Thi B (tranthib) ---
+Subject: [Logwork] under_hours — 2026-05-20
+Chào Tran Thi B,
+Vui lòng kiểm tra logwork ngày 20/05/2026: bạn đang thiếu 4.0 giờ (đã log 4.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [3] TEAMS -> Le Van C (levanc) ---
+Subject: [Logwork] over_hours — 2026-05-18
+Chào Le Van C,
+Ngày 18/05/2026 bạn log 16.0h, vượt chuẩn 8.0h (8.0h). Vui lòng rà soát lại timesheet.
+
+--- [4] TEAMS -> Le Van C (levanc) ---
+Subject: [Logwork] missing_day — 2026-05-22
+Chào Le Van C,
+Vui lòng kiểm tra logwork ngày 22/05/2026: bạn đang thiếu 8.0 giờ (đã log 0.0h / chuẩn 8.0h).
+Cập nhật trên Jira trước cuối ngày hôm nay. Cảm ơn!
+
+--- [5] TEAMS -> Le Van C (levanc) ---
+Subject: [Logwork] compensation — 2026-05-22
+Chào Le Van C,
+Phát hiện bù trừ giờ trong tuần: Bù trừ: 2026-05-22 thiếu 8.0h ↔ 2026-05-18 thừa 8.0h (high)
+Vui lòng rà soát và điều chỉnh worklog trên Jira.
+
+--- [6] TEAMS -> Hoang Van E (hoangvane) ---
+Subject: [Logwork] over_hours — 2026-05-19
+Chào Hoang Van E,
+Ngày 19/05/2026 bạn log 10.0h, vượt chuẩn 8.0h (2.0h). Vui lòng rà soát lại timesheet.

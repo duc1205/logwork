@@ -1,0 +1,8 @@
+job=reminder
+ran_at=2026-06-01T08:08:26.328542
+week=2026-05-18..2026-05-24
+employees=6
+penalty=50000
+summary=logwork\output\logwork_2026-05-18_summary.csv
+compensation=logwork\output\logwork_2026-05-18_compensation.csv
+reminders=logwork\output\reminders_2026-05-18.txt

@@ -1,0 +1,12 @@
+{
+  "anchor_date": "2026-05-21",
+  "min_hours": 8,
+  "max_hours": 8,
+  "tolerance_hours": 0.25,
+  "penalty_per_md": 20000,
+  "compensation_threshold": 2.0,
+  "project_keys": [],
+  "predictive_tue_pace_min": 0.20,
+  "predictive_wed_pace_min": 0.40,
+  "_note": "project_keys rỗng = mọi project Jira. Env: LOGWORK_PROJECT_KEYS=PROJ1,PROJ2"
+}

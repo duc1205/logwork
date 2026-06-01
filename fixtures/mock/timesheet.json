@@ -1,0 +1,36 @@
+[
+  {"employee_id": "nguyenvana", "work_date": "2026-05-18", "hours": 8, "issue_key": "HVKHQS-101", "project_key": "HVKHQS"},
+  {"employee_id": "nguyenvana", "work_date": "2026-05-19", "hours": 8, "issue_key": "HVKHQS-102", "project_key": "HVKHQS"},
+  {"employee_id": "nguyenvana", "work_date": "2026-05-20", "hours": 8, "issue_key": "HVKHQS-103", "project_key": "HVKHQS"},
+  {"employee_id": "nguyenvana", "work_date": "2026-05-21", "hours": 8, "issue_key": "HVKHQS-104", "project_key": "HVKHQS"},
+  {"employee_id": "nguyenvana", "work_date": "2026-05-22", "hours": 8, "issue_key": "HVKHQS-105", "project_key": "HVKHQS"},
+
+  {"employee_id": "tranthib", "work_date": "2026-05-18", "hours": 0, "issue_key": null, "project_key": null},
+  {"employee_id": "tranthib", "work_date": "2026-05-19", "hours": 8, "issue_key": "HVKHQS-201", "project_key": "HVKHQS"},
+  {"employee_id": "tranthib", "work_date": "2026-05-20", "hours": 4, "issue_key": "HVKHQS-202", "project_key": "HVKHQS"},
+  {"employee_id": "tranthib", "work_date": "2026-05-21", "hours": 8, "issue_key": "HVKHQS-203", "project_key": "HVKHQS"},
+  {"employee_id": "tranthib", "work_date": "2026-05-22", "hours": 8, "issue_key": "HVKHQS-204", "project_key": "HVKHQS"},
+
+  {"employee_id": "levanc", "work_date": "2026-05-18", "hours": 16, "issue_key": "INTERNAL-301", "project_key": "INTERNAL"},
+  {"employee_id": "levanc", "work_date": "2026-05-19", "hours": 8, "issue_key": "INTERNAL-302", "project_key": "INTERNAL"},
+  {"employee_id": "levanc", "work_date": "2026-05-20", "hours": 8, "issue_key": "INTERNAL-303", "project_key": "INTERNAL"},
+  {"employee_id": "levanc", "work_date": "2026-05-21", "hours": 8, "issue_key": "INTERNAL-304", "project_key": "INTERNAL"},
+  {"employee_id": "levanc", "work_date": "2026-05-22", "hours": 0, "issue_key": null, "project_key": null},
+
+  {"employee_id": "phamthid", "work_date": "2026-05-18", "hours": 8, "issue_key": "HVKHQS-401", "project_key": "HVKHQS"},
+  {"employee_id": "phamthid", "work_date": "2026-05-19", "hours": 8, "issue_key": "HVKHQS-402", "project_key": "HVKHQS"},
+  {"employee_id": "phamthid", "work_date": "2026-05-20", "hours": 8, "issue_key": "HVKHQS-403", "project_key": "HVKHQS"},
+  {"employee_id": "phamthid", "work_date": "2026-05-22", "hours": 8, "issue_key": "HVKHQS-404", "project_key": "HVKHQS"},
+
+  {"employee_id": "hoangvane", "work_date": "2026-05-18", "hours": 8, "issue_key": "SUPPORT-501", "project_key": "SUPPORT"},
+  {"employee_id": "hoangvane", "work_date": "2026-05-19", "hours": 10, "issue_key": "SUPPORT-502", "project_key": "SUPPORT"},
+  {"employee_id": "hoangvane", "work_date": "2026-05-20", "hours": 8, "issue_key": "SUPPORT-503", "project_key": "SUPPORT"},
+  {"employee_id": "hoangvane", "work_date": "2026-05-21", "hours": 8, "issue_key": "SUPPORT-504", "project_key": "SUPPORT"},
+  {"employee_id": "hoangvane", "work_date": "2026-05-22", "hours": 8, "issue_key": "SUPPORT-505", "project_key": "SUPPORT"},
+
+  {"employee_id": "vuthif", "work_date": "2026-05-18", "hours": 8, "issue_key": "HVKHQS-601", "project_key": "HVKHQS"},
+  {"employee_id": "vuthif", "work_date": "2026-05-19", "hours": 8, "issue_key": "HVKHQS-602", "project_key": "HVKHQS"},
+  {"employee_id": "vuthif", "work_date": "2026-05-20", "hours": 10, "issue_key": "HVKHQS-603", "project_key": "HVKHQS"},
+  {"employee_id": "vuthif", "work_date": "2026-05-21", "hours": 8, "issue_key": "HVKHQS-604", "project_key": "HVKHQS"},
+  {"employee_id": "vuthif", "work_date": "2026-05-22", "hours": 8, "issue_key": "HVKHQS-605", "project_key": "HVKHQS"}
+]

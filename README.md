@@ -2,6 +2,10 @@
 
 Hệ thống rule-based đối soát logwork Jira (Đề bài số 5).
 
+**UI công khai (GitHub Pages):** https://duc1205.github.io/logwork/  
+**Repo:** https://github.com/duc1205/logwork  
+**Hướng dẫn bật Pages + API cho nhiều người:** [docs/GITHUB_PAGES.md](./docs/GITHUB_PAGES.md)
+
 **Tài liệu đầy đủ (giải thích source, CLI, nghiệp vụ):** [TAI_LIEU_SOURCE.md](./TAI_LIEU_SOURCE.md)
 
 ## Quick start

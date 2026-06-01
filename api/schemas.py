@@ -133,6 +133,7 @@ class HealthResponse(BaseModel):
     version: str = "1.0.0"
     mode: str = "jira_live"
     data_dir: str = ""
+    config_ready: bool = True
 
 
 class PredictiveAlertItem(BaseModel):

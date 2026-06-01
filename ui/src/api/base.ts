@@ -50,7 +50,7 @@ export function apiUrl(path: string): string {
 /** Nhãn hiển thị trên UI — kiểm tra UI đang gọi BE nào. */
 export function apiEndpointLabel(): string {
   if (import.meta.env.DEV) {
-    return "Vite proxy /api → http://127.0.0.1:8000";
+    return "Vite proxy /api → http://127.0.0.1:8001";
   }
   if (resolvedBase) {
     return resolvedBase;

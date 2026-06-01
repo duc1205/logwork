@@ -92,10 +92,13 @@ async def file_not_found_handler(_request: Request, exc: FileNotFoundError) -> J
 def health() -> HealthResponse:
     from .live_data import live_data_dir
 
+    data_dir = live_data_dir()
+    config_ready = (data_dir / "config.json").is_file()
     return HealthResponse(
-        status="ok",
+        status="ok" if config_ready else "degraded",
         mode="jira_live",
-        data_dir=str(live_data_dir()),
+        data_dir=str(data_dir),
+        config_ready=config_ready,
     )
 
 

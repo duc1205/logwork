@@ -16,7 +16,11 @@ export function Layout() {
     api
       .health()
       .then((h) => {
-        setLiveOk(h.status === "ok" && h.mode === "jira_live");
+        const ready =
+          h.status === "ok" &&
+          h.mode === "jira_live" &&
+          (h.config_ready !== false);
+        setLiveOk(ready);
         setDataDir(h.data_dir ?? null);
       })
       .catch(() => {
@@ -93,7 +97,7 @@ export function Layout() {
           </p>
           {liveOk !== null && (
             <p className={`sidebar-status${liveOk ? " ok" : " err"}`}>
-              {liveOk ? "● Jira live" : "● API offline"}
+              {liveOk ? "● Jira live" : dataDir ? "● BE lỗi cấu hình" : "● API offline"}
               {dataDir && liveOk && (
                 <small className="sidebar-data-dir" title={dataDir}>
                   {" "}

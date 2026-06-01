@@ -4,9 +4,6 @@ name: Deploy UI (GitHub Pages)
 on:
   push:
     branches: [main]
-    paths:
-      - "ui/**"
-      - ".github/workflows/deploy-ui.yml"
   workflow_dispatch:
 
 permissions:

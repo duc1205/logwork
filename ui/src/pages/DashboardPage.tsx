@@ -71,7 +71,12 @@ export function DashboardPage() {
       })
       .catch((e) => {
         if (!cancelled) {
-          setError(e instanceof ApiError ? e.message : String(e.message ?? e));
+          const msg = e instanceof ApiError ? e.message : String(e.message ?? e);
+          setError(
+            msg === "Internal Server Error"
+              ? `${msg} — kiểm tra UI proxy tới :8001 (restart npm run dev).`
+              : msg,
+          );
         }
       })
       .finally(() => {

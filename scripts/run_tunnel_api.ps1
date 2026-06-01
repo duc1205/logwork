@@ -14,11 +14,21 @@
 $ErrorActionPreference = "Stop"
 $apiPort = if ($env:LOGWORK_API_PORT) { [int]$env:LOGWORK_API_PORT } else { 8001 }
 
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$binCf = Join-Path $scriptDir "bin\cloudflared.exe"
 $cf = Get-Command cloudflared -ErrorAction SilentlyContinue
+if (-not $cf -and (Test-Path $binCf)) { $cf = Get-Item $binCf }
 if (-not $cf) {
-    Write-Host "Cai cloudflared: winget install Cloudflare.cloudflared" -ForegroundColor Yellow
+    New-Item -ItemType Directory -Force -Path (Split-Path $binCf) | Out-Null
+    Write-Host "Tai cloudflared ve $binCf ..." -ForegroundColor Yellow
+    Invoke-WebRequest -Uri "https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-windows-amd64.exe" -OutFile $binCf -UseBasicParsing
+    $cf = Get-Item $binCf
+}
+if (-not $cf) {
+    Write-Host "Loi: khong cai duoc cloudflared." -ForegroundColor Red
     exit 1
 }
+$cfExe = if ($cf.Source) { $cf.Source } else { $cf.FullName }
 
 Write-Host "Tunnel API http://127.0.0.1:$apiPort -> trycloudflare.com"
 Write-Host "Dat URL (khong co / cuoi) vao:"
@@ -26,4 +36,4 @@ Write-Host "  - GitHub: Settings -> Actions -> Variables -> VITE_API_BASE_URL"
 Write-Host "  - hoac ui/public/config.json -> apiBaseUrl"
 Write-Host ""
 
-& cloudflared tunnel --url "http://127.0.0.1:$apiPort"
+& $cfExe tunnel --url "http://127.0.0.1:$apiPort"

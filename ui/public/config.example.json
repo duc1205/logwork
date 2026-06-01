@@ -1,4 +1,4 @@
 {
-  "apiBaseUrl": "https://your-public-api.example.com",
-  "_note": "Copy thành config.json. Không có dấu / cuối. Dev local dùng Vite proxy — không cần file này."
+  "apiBaseUrl": "https://xxxx.trycloudflare.com",
+  "_note": "Sửa ui/public/config.json (apiBaseUrl = link tunnel API, không / cuối), push main, đợi Actions deploy. Không dùng localhost — GitHub Pages không tới máy bạn."
 }

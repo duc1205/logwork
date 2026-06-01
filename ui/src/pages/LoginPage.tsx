@@ -41,8 +41,12 @@ export function LoginPage() {
 
         {!isApiConfigured() && (
           <div className="alert alert-warn">
-            Chưa cấu hình URL backend. Sửa <code>ui/public/config.json</code> (
-            <code>apiBaseUrl</code>) hoặc biến GitHub <code>VITE_API_BASE_URL</code>, rồi build lại.
+            <strong>Chưa có URL API public.</strong> GitHub Pages không gọi được{" "}
+            <code>localhost</code>. Trên máy bạn: chạy API (:8001) +{" "}
+            <code>cloudflared tunnel --url http://127.0.0.1:8001</code> → copy link{" "}
+            <code>https://….trycloudflare.com</code> vào{" "}
+            <code>ui/public/config.json</code> (<code>apiBaseUrl</code>) → push{" "}
+            <code>main</code> → đợi Actions deploy (~1 phút).
           </div>
         )}
 

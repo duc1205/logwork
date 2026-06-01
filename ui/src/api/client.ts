@@ -200,7 +200,12 @@ export const api = {
     return request<ScheduleInfo>("/api/schedule");
   },
 
-  health(): Promise<{ status: string; mode: string; data_dir: string }> {
+  health(): Promise<{
+    status: string;
+    mode: string;
+    data_dir: string;
+    config_ready?: boolean;
+  }> {
     return request("/api/health");
   },
 

@@ -1,4 +1,4 @@
-# Deploy React UI lên GitHub Pages — https://duc1205.github.io/logwork/
+# Deploy UI → nhánh gh-pages → https://duc1205.github.io/logwork/
 name: Deploy UI (GitHub Pages)
 
 on:
@@ -7,21 +7,17 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/configure-pages@v5
 
       - uses: actions/setup-node@v4
         with:
@@ -37,22 +33,13 @@ jobs:
         working-directory: ui
         env:
           VITE_BASE_PATH: /logwork/
-          # Repository variable (Settings → Secrets and variables → Actions → Variables)
           VITE_API_BASE_URL: ${{ vars.VITE_API_BASE_URL }}
         run: npm run build:pages
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: ui/dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ui/dist
+          force_orphan: true

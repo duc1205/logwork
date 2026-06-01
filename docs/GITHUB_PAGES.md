@@ -2,18 +2,18 @@
 
 **Link công khai (sau khi bật Pages):** https://duc1205.github.io/logwork/
 
-## Bước 1 — Bật GitHub Pages (một lần)
+## Bước 1 — Chạy deploy (tự động khi push `main`)
+
+Xem: https://github.com/duc1205/logwork/actions — workflow **Deploy UI (GitHub Pages)** phải **xanh**.
+
+## Bước 2 — Bật GitHub Pages (một lần, sau khi workflow xanh)
 
 1. Mở https://github.com/duc1205/logwork/settings/pages
-2. **Build and deployment** → **Source:** chọn **GitHub Actions** (không chọn Deploy from branch)
-3. Lưu
+2. **Build and deployment** → **Source:** **Deploy from a branch**
+3. **Branch:** `gh-pages` · thư mục **`/ (root)`** → **Save**
+4. Đợi 1–2 phút → mở https://duc1205.github.io/logwork/
 
-## Bước 2 — Chạy deploy
-
-- Push lên nhánh `main` → workflow **Deploy UI (GitHub Pages)** tự chạy  
-- Hoặc: **Actions** → **Deploy UI (GitHub Pages)** → **Run workflow**
-
-Đợi job xanh → mở lại link https://duc1205.github.io/logwork/
+(Nếu chọn **GitHub Actions** thay vì branch `gh-pages` cũng được — sau khi đã có deploy thành công.)
 
 ## Bước 3 — API cho mọi người (bắt buộc)
 

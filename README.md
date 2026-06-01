@@ -62,7 +62,7 @@ Chi tiết: [ui/README.md](./ui/README.md)
 
 Workflow [`.github/workflows/deploy-ui.yml`](./.github/workflows/deploy-ui.yml) publish UI tại **https://duc1205.github.io/logwork/**
 
-1. Repo → **Settings** → **Pages** → Source: **GitHub Actions**
+1. Đợi Actions **Deploy UI** chạy xanh → **Settings** → **Pages** → branch **`gh-pages`** / root
 2. **Actions** → **Variables** → `VITE_API_BASE_URL` = URL FastAPI public (bắt buộc)
 3. Server API: `LOGWORK_ALLOW_LAN=1` hoặc `LOGWORK_CORS_ORIGINS` có `https://duc1205.github.io`
 

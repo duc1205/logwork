@@ -7,10 +7,11 @@ $repoRoot = Split-Path -Parent $logworkDir
 $uiDir = Join-Path $logworkDir "ui"
 Set-Location $repoRoot
 
-Write-Host "Starting Logwork API on :8000 ..."
+$liveDir = Join-Path $logworkDir "fixtures\live"
+Write-Host "Starting Logwork API on :8000 (data: $liveDir) ..."
 Start-Process powershell -ArgumentList @(
     "-NoExit", "-Command",
-    "cd '$repoRoot'; `$env:LOGWORK_DISABLE_SCHEDULER='1'; python -m uvicorn logwork.api.main:app --host 127.0.0.1 --port 8000 --reload"
+    "cd '$repoRoot'; `$env:LOGWORK_DISABLE_SCHEDULER='1'; `$env:LOGWORK_DATA_DIR='$liveDir'; python -m uvicorn logwork.api.main:app --host 127.0.0.1 --port 8000 --reload"
 )
 
 Start-Sleep -Seconds 2

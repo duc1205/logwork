@@ -3,10 +3,12 @@ import { useEffect, useMemo, useState } from "react";
 import { api, ApiError } from "../api/client";
 import type { NotificationList, ScheduleInfo } from "../api/types";
 import { NotificationCard } from "../components/NotificationCard";
+import { PageHeader } from "../components/PageHeader";
 import { PeriodPicker } from "../components/PeriodPicker";
 import { useAuth } from "../context/AuthContext";
 import { usePeriod } from "../context/PeriodContext";
 import { isQaRole } from "../utils/roles";
+import { fmtNextRun } from "../utils/datetime";
 import { fmtRangeVi, periodQueryString } from "../utils/period";
 import { sourceLabel } from "../utils/source";
 
@@ -30,17 +32,6 @@ export function NotificationsPage() {
   useEffect(() => {
     api.schedule().then(setSchedule).catch(() => setSchedule(null));
   }, []);
-
-  function fmtNextRun(iso: string) {
-    return new Date(iso).toLocaleString("vi-VN", {
-      weekday: "long",
-      day: "2-digit",
-      month: "2-digit",
-      year: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-    });
-  }
 
   useEffect(() => {
     let cancelled = false;
@@ -141,60 +132,58 @@ export function NotificationsPage() {
 
   return (
     <div className="page">
-      <header className="page-header">
-        <div>
-          <h1>Thông báo</h1>
-          <p className="muted">
-            {schedule?.schedule_hint ?? data?.schedule_hint ?? "Mỗi 17:00 thứ Tư hàng tuần"}
-          </p>
-          {schedule && (
-            <p className="muted schedule-next">
-              Lần chạy tiếp: <strong>{fmtNextRun(schedule.next_run_at)}</strong>
-              {schedule.scheduler_enabled ? " · Auto bật" : schedule.scheduler_configured ? "" : " · Auto tắt"}
-              {schedule.last_run_at && (
-                <>
-                  {" "}
-                  · Lần trước: {fmtNextRun(schedule.last_run_at)}
-                  {schedule.last_run_ok === false ? " (lỗi)" : schedule.last_run_ok ? " (OK)" : ""}
-                </>
-              )}
-            </p>
-          )}
-          {isQa && schedule && !schedule.credentials_configured && (
-            <div className="alert alert-warn compact">
-              Job tự động cần <code>JIRA_USERNAME</code> trên server. Trigger thủ công dùng session QA đang đăng nhập.
+      <PageHeader
+        title="Thông báo"
+        subtitle={schedule?.schedule_hint ?? data?.schedule_hint ?? "Mỗi 17:00 thứ Tư hàng tuần"}
+        aside={
+          isQa ? (
+            <div className="export-actions">
+              <button
+                type="button"
+                className="btn-secondary btn-sm"
+                onClick={() => reloadFromJira(true)}
+                disabled={refreshing || loading}
+              >
+                {refreshing ? "Đang sync…" : "Sync Jira"}
+              </button>
+              <button
+                type="button"
+                className="btn-secondary btn-sm"
+                onClick={handleTrigger}
+                disabled={triggering}
+              >
+                {triggering ? "Đang chạy…" : "Chạy job nhắc"}
+              </button>
+              <button type="button" className="btn-ghost btn-sm" onClick={handlePurge}>
+                Xóa cache cũ
+              </button>
             </div>
-          )}
-          <PeriodPicker value={period} onChange={setPeriod} />
-          {data?.data_source && (
-            <span className="source-badge tone-ok">Nguồn: {sourceLabel(data.data_source)}</span>
-          )}
-        </div>
-
-        {isQa && (
-          <div className="export-actions">
-            <button
-              type="button"
-              className="btn-secondary btn-sm"
-              onClick={() => reloadFromJira(true)}
-              disabled={refreshing || loading}
-            >
-              {refreshing ? "Đang sync…" : "Sync Jira"}
-            </button>
-            <button
-              type="button"
-              className="btn-secondary btn-sm"
-              onClick={handleTrigger}
-              disabled={triggering}
-            >
-              {triggering ? "Đang chạy…" : "Chạy job nhắc"}
-            </button>
-            <button type="button" className="btn-ghost btn-sm" onClick={handlePurge}>
-              Xóa cache cũ
-            </button>
+          ) : undefined
+        }
+      >
+        {schedule && (
+          <p className="muted schedule-next">
+            Lần chạy tiếp: <strong>{fmtNextRun(schedule.next_run_at)}</strong>
+            {schedule.scheduler_enabled ? " · Auto bật" : schedule.scheduler_configured ? "" : " · Auto tắt"}
+            {schedule.last_run_at && (
+              <>
+                {" "}
+                · Lần trước: {fmtNextRun(schedule.last_run_at)}
+                {schedule.last_run_ok === false ? " (lỗi)" : schedule.last_run_ok ? " (OK)" : ""}
+              </>
+            )}
+          </p>
+        )}
+        {isQa && schedule && !schedule.credentials_configured && (
+          <div className="alert alert-warn compact">
+            Job tự động cần <code>JIRA_USERNAME</code> trên server. Trigger thủ công dùng session QA đang đăng nhập.
           </div>
         )}
-      </header>
+        <PeriodPicker value={period} onChange={setPeriod} />
+        {data?.data_source && (
+          <span className="source-badge tone-ok">Nguồn: {sourceLabel(data.data_source)}</span>
+        )}
+      </PageHeader>
 
       {initialLoad && <div className="page-loading">Đang tải từ Jira…</div>}
       {loading && data && <p className="muted loading-inline">Đang cập nhật…</p>}

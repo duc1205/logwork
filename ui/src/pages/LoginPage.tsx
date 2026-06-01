@@ -1,5 +1,6 @@
 import { FormEvent, useState } from "react";
 import { Navigate, useSearchParams } from "react-router-dom";
+import { apiBaseUrl } from "../api/base";
 import { ApiError } from "../api/client";
 import { useAuth } from "../context/AuthContext";
 
@@ -37,6 +38,13 @@ export function LoginPage() {
           <h1>Logwork QA Audit</h1>
           <p>Nhân viên xem tổng hợp cá nhân · QA đối soát team · Cấu hình hệ thống (theo danh sách env)</p>
         </div>
+
+        {import.meta.env.PROD && !apiBaseUrl() && (
+          <div className="alert alert-warn">
+            UI đang chạy trên GitHub Pages nhưng chưa có URL API. Admin repo cần đặt biến{" "}
+            <code>VITE_API_BASE_URL</code> (Actions → Variables) trỏ tới server FastAPI public.
+          </div>
+        )}
 
         {expired && (
           <div className="alert alert-warn">Phiên đăng nhập hết hạn — vui lòng đăng nhập lại.</div>

@@ -1,3 +1,4 @@
+import { apiUrl } from "./base";
 import type {
   AuditSettings,
   GoldenCompareResult,
@@ -38,8 +39,9 @@ class ApiError extends Error {
 
 function handleUnauthorized(): void {
   clearToken();
-  if (!window.location.pathname.startsWith("/login")) {
-    window.location.href = "/login?expired=1";
+  const loginPath = `${import.meta.env.BASE_URL}login`;
+  if (!window.location.pathname.endsWith("/login")) {
+    window.location.assign(`${loginPath}?expired=1`);
   }
 }
 
@@ -59,7 +61,7 @@ async function request<T>(
     headers.Authorization = `Bearer ${token}`;
   }
 
-  const res = await fetch(path, { ...options, headers });
+  const res = await fetch(apiUrl(path), { ...options, headers });
   if (res.status === 401) {
     handleUnauthorized();
     throw new ApiError(401, "Phiên đăng nhập hết hạn");
@@ -78,9 +80,18 @@ async function request<T>(
 }
 
 function parseErrorBody(body: Record<string, unknown>): string {
-  const detail = String(body.detail ?? "Lỗi API");
+  const raw = body.detail;
+  const detail =
+    typeof raw === "string"
+      ? raw
+      : Array.isArray(raw)
+        ? raw.map((x) => (typeof x === "object" && x && "msg" in x ? String((x as { msg: string }).msg) : String(x))).join("; ")
+        : "Lỗi API";
   const jira = body.jira_error ? String(body.jira_error) : "";
-  return jira && jira !== detail ? `${detail} (${jira})` : detail;
+  const hint = body.hint ? String(body.hint) : "";
+  let msg = jira && jira !== detail ? `${detail} (${jira})` : detail;
+  if (hint && !msg.includes(hint)) msg += ` — ${hint}`;
+  return msg;
 }
 
 export const api = {
@@ -124,7 +135,7 @@ export const api = {
     const headers: Record<string, string> = {};
     if (token) headers.Authorization = `Bearer ${token}`;
     const q = periodQuery ? `?${periodQuery}` : "";
-    const res = await fetch(`/api/admin/golden/compare${q}`, {
+    const res = await fetch(apiUrl(`/api/admin/golden/compare${q}`), {
       method: "POST",
       headers,
       body: fd,
@@ -152,7 +163,7 @@ export const api = {
     fd.append("file", file);
     const headers: Record<string, string> = {};
     if (token) headers.Authorization = `Bearer ${token}`;
-    const res = await fetch("/api/admin/golden/validate", {
+    const res = await fetch(apiUrl("/api/admin/golden/validate"), {
       method: "POST",
       headers,
       body: fd,
@@ -270,7 +281,7 @@ export const api = {
     const headers: Record<string, string> = {};
     if (token) headers.Authorization = `Bearer ${token}`;
     const q = periodQuery ? `?${periodQuery}` : "";
-    const res = await fetch(`/api/dashboard/export/${kind}${q}`, { headers });
+    const res = await fetch(apiUrl(`/api/dashboard/export/${kind}${q}`), { headers });
     if (res.status === 401) {
       handleUnauthorized();
       throw new ApiError(401, "Phiên đăng nhập hết hạn");

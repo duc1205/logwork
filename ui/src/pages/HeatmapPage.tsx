@@ -3,7 +3,9 @@ import { useNavigate } from "react-router-dom";
 
 import { api, ApiError } from "../api/client";
 import type { HeatmapData } from "../api/types";
+import { ExportCsvButtons } from "../components/ExportCsvButtons";
 import { HeatmapGrid } from "../components/HeatmapGrid";
+import { PageHeader } from "../components/PageHeader";
 import { PeriodPicker } from "../components/PeriodPicker";
 import { useAuth } from "../context/AuthContext";
 import { usePeriod } from "../context/PeriodContext";
@@ -71,46 +73,33 @@ export function HeatmapPage() {
 
   return (
     <div className="page">
-      <header className="page-header">
-        <div>
-          <h1>Heatmap logwork</h1>
-          <p className="muted">
-            {isQa
-              ? "Toàn team — màu theo mức độ đối soát từng ngày"
-              : "Trực quan hóa logwork cá nhân theo ngày"}
+      <PageHeader
+        title="Heatmap logwork"
+        subtitle={
+          isQa
+            ? "Toàn team — màu theo mức độ đối soát từng ngày"
+            : "Trực quan hóa logwork cá nhân theo ngày"
+        }
+      >
+        <PeriodPicker value={period} onChange={setPeriod} />
+        {data?.data_source && (
+          <span className={`source-badge tone-${sourceTone(data.data_source)}`}>
+            Nguồn: {sourceLabel(data.data_source)}
+          </span>
+        )}
+        {data && (
+          <p className="muted as-of-hint">
+            {isMonth ? "Tháng" : "Tuần"} {fmtRangeVi(data.week_start, data.week_end)}
+            {isPartial && ` · Hiển thị đến ${fmtDateVi(data.as_of)}`}
           </p>
-          <PeriodPicker value={period} onChange={setPeriod} />
-          {data?.data_source && (
-            <span className={`source-badge tone-${sourceTone(data.data_source)}`}>
-              Nguồn: {sourceLabel(data.data_source)}
-            </span>
-          )}
-          {data && (
-            <p className="muted as-of-hint">
-              {isMonth ? "Tháng" : "Tuần"} {fmtRangeVi(data.week_start, data.week_end)}
-              {isPartial && ` · Hiển thị đến ${fmtDateVi(data.as_of)}`}
-            </p>
-          )}
-          <div className="export-actions">
-            <button
-              type="button"
-              className="btn-secondary btn-sm"
-              disabled={!!exporting || loading}
-              onClick={() => handleExport("summary")}
-            >
-              {exporting === "summary" ? "Đang tải…" : isQa ? "Export CSV team" : "Export CSV của tôi"}
-            </button>
-            <button
-              type="button"
-              className="btn-secondary btn-sm"
-              disabled={!!exporting || loading}
-              onClick={() => handleExport("compensation")}
-            >
-              {exporting === "compensation" ? "Đang tải…" : isQa ? "Export bù trừ team" : "Export bù trừ"}
-            </button>
-          </div>
-        </div>
-      </header>
+        )}
+        <ExportCsvButtons
+          exporting={exporting}
+          disabled={loading}
+          isQa={isQa}
+          onExport={handleExport}
+        />
+      </PageHeader>
 
       {loading && isQa && !data && (
         <div className="alert alert-info jira-sync-banner">

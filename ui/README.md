@@ -142,3 +142,16 @@ ui/
 npm run build
 # output: ui/dist/
 ```
+
+## GitHub Pages (`duc1205/logwork`)
+
+```bash
+# PowerShell
+$env:VITE_BASE_PATH="/logwork/"
+$env:VITE_API_BASE_URL="https://your-api-server.example.com"
+npm run build:pages
+```
+
+- URL: https://duc1205.github.io/logwork/
+- CI: push `main` → workflow `.github/workflows/deploy-ui.yml`
+- Biến repo `VITE_API_BASE_URL` (GitHub Actions Variables) — xem `ui/.env.production.example`

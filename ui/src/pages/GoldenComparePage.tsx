@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { api, ApiError } from "../api/client";
 import type { GoldenCompareResult } from "../api/types";
+import { PageHeader } from "../components/PageHeader";
 import { PeriodPicker } from "../components/PeriodPicker";
 import { usePeriod } from "../context/PeriodContext";
 import { fmtRangeVi, periodQueryString } from "../utils/period";
@@ -75,14 +76,10 @@ export function GoldenComparePage() {
 
   return (
     <div className="page">
-      <header className="page-header">
-        <div>
-          <h1>Golden QA Compare</h1>
-          <p className="muted">
-            Admin: upload CSV golden QA, so khớp với kết quả engine cùng kỳ (tuần/tháng).
-          </p>
-        </div>
-      </header>
+      <PageHeader
+        title="Golden QA Compare"
+        subtitle="Admin: upload CSV golden QA, so khớp với kết quả engine cùng kỳ (tuần/tháng)."
+      />
 
       <form className="golden-form section" onSubmit={handleCompare}>
         <PeriodPicker value={period} onChange={setPeriod} />

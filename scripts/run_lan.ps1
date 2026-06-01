@@ -92,8 +92,9 @@ Ensure-FirewallRule -Port ([int]$uiPort) -Label "UI"
 Ensure-FirewallRule -Port ([int]$apiPort) -Label "API"
 Write-Host ""
 
-Write-Host "Starting API on 0.0.0.0:$apiPort ..."
-$apiCmd = "cd '$repoRoot'; `$env:LOGWORK_DISABLE_SCHEDULER='1'; `$env:LOGWORK_ALLOW_LAN='1'; python -m uvicorn logwork.api.main:app --host 0.0.0.0 --port $apiPort --reload"
+$liveDir = Join-Path $logworkDir "fixtures\live"
+Write-Host "Starting API on 0.0.0.0:$apiPort (data: $liveDir) ..."
+$apiCmd = "cd '$repoRoot'; `$env:LOGWORK_DISABLE_SCHEDULER='1'; `$env:LOGWORK_ALLOW_LAN='1'; `$env:LOGWORK_DATA_DIR='$liveDir'; python -m uvicorn logwork.api.main:app --host 0.0.0.0 --port $apiPort --reload"
 Start-Process powershell -ArgumentList @("-NoExit", "-Command", $apiCmd)
 
 Start-Sleep -Seconds 2

@@ -1,20 +1,13 @@
 import { useEffect, useState } from "react";
 
 import { AccountSearchPicker } from "../components/AccountSearchPicker";
+import { PageHeader } from "../components/PageHeader";
+import { fmtDateViShort } from "../utils/datetime";
 import { api, ApiError } from "../api/client";
 import type { AuditSettings, HolidayItem, OtRules, OvertimeItem } from "../api/types";
 
 function fmtVnd(n: number) {
   return new Intl.NumberFormat("vi-VN", { style: "currency", currency: "VND" }).format(n);
-}
-
-function fmtDateVi(iso: string) {
-  return new Date(iso + "T12:00:00").toLocaleDateString("vi-VN", {
-    weekday: "short",
-    day: "2-digit",
-    month: "2-digit",
-    year: "numeric",
-  });
 }
 
 export function SettingsPage() {
@@ -200,17 +193,17 @@ export function SettingsPage() {
 
   return (
     <div className="page">
-      <header className="page-header">
-        <div>
-          <h1>Cấu hình đối soát</h1>
-          <p className="muted">
+      <PageHeader
+        title="Cấu hình đối soát"
+        subtitle={
+          <>
             Chỉ tài khoản trong <code>LOGWORK_ADMIN_USERS</code> (quyền cấu hình Logwork —{" "}
             <strong>không</strong> phải Administrator Jira). Đăng nhập bằng username/password Jira bình thường.
             Mức phạt, ngày nghỉ lễ và quy tắc OT áp dụng cho mọi lần đối soát.
             {settings?.data_dir && <> · <code>{settings.data_dir}</code></>}
-          </p>
-        </div>
-      </header>
+          </>
+        }
+      />
 
       {error && <div className="alert alert-error">{error}</div>}
       {msg && <div className="alert alert-info">{msg}</div>}
@@ -296,7 +289,7 @@ export function SettingsPage() {
             <tbody>
               {holidays.map((h) => (
                 <tr key={h.holiday_date}>
-                  <td>{fmtDateVi(h.holiday_date)}</td>
+                  <td>{fmtDateViShort(h.holiday_date)}</td>
                   <td>{h.name}</td>
                   <td>
                     <button
@@ -471,7 +464,7 @@ export function SettingsPage() {
                 <tr key={`${o.employee_id}-${o.ot_date}`}>
                   <td><code>{o.employee_id}</code></td>
                   <td>{o.display_name ?? "—"}</td>
-                  <td>{fmtDateVi(o.ot_date)}</td>
+                  <td>{fmtDateViShort(o.ot_date)}</td>
                   <td>{o.ot_hours}h</td>
                   <td>{o.status}</td>
                   <td>{o.reason || "—"}</td>

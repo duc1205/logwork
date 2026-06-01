@@ -23,7 +23,10 @@ logger = logging.getLogger("logwork.api")
 async def lifespan(app: FastAPI):
     from .live_data import live_data_dir
 
-    logger.info("Logwork API: Jira live only — data dir %s", live_data_dir())
+    data_dir = live_data_dir()
+    logger.info("Logwork API: Jira live only — data dir %s", data_dir)
+    if not (data_dir / "config.json").is_file():
+        raise RuntimeError(f"Thiếu config live: {data_dir / 'config.json'}")
     scheduler_service.start_scheduler()
     yield
     scheduler_service.shutdown_scheduler()
@@ -38,11 +41,17 @@ app = FastAPI(
 
 _cors = os.environ.get(
     "LOGWORK_CORS_ORIGINS",
-    "http://localhost:5173,http://127.0.0.1:5173",
+    "http://localhost:5173,http://127.0.0.1:5173,http://localhost:5174,"
+    "https://duc1205.github.io",
 ).split(",")
 _cors = [o.strip() for o in _cors if o.strip()]
 _allow_lan = os.environ.get("LOGWORK_ALLOW_LAN", "0") == "1"
-_origin_regex = r"https?://(localhost|127\.0\.0\.1|192\.168\.\d{1,3}\.\d{1,3}|10\.\d{1,3}\.\d{1,3}\.\d{1,3}|172\.(1[6-9]|2\d|3[01])\.\d{1,3}\.\d{1,3})(:\d+)?$" if _allow_lan else None
+_origin_regex = r"https?://(localhost|127\.0\.0\.1|192\.168\.\d{1,3}\.\d{1,3}|10\.\d{1,3}\.\d{1,3}|172\.(1[6-9]|2\d|3[01])\.\d{1,3}\.\d{1,3})(:\d+)?$"
+_github_pages = r"https://[\w.-]+\.github\.io$"
+if _allow_lan:
+    _origin_regex = f"(?:{_origin_regex}|{_github_pages})"
+else:
+    _origin_regex = _github_pages
 app.add_middleware(
     CORSMiddleware,
     allow_origins=_cors,
@@ -64,6 +73,18 @@ async def jira_fetch_error_handler(_request: Request, exc: JiraFetchError) -> JS
     return JSONResponse(
         status_code=502,
         content={"detail": str(exc), "jira_error": exc.detail},
+    )
+
+
+@app.exception_handler(FileNotFoundError)
+async def file_not_found_handler(_request: Request, exc: FileNotFoundError) -> JSONResponse:
+    logger.error("FileNotFoundError: %s", exc)
+    return JSONResponse(
+        status_code=503,
+        content={
+            "detail": str(exc),
+            "hint": "Kiểm tra LOGWORK_DATA_DIR hoặc thư mục fixtures/live trong repo.",
+        },
     )
 
 

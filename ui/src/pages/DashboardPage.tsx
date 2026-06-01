@@ -5,8 +5,11 @@ import { api, ApiError } from "../api/client";
 import type { PredictiveData, ScheduleInfo, WeeklySummary } from "../api/types";
 import { CompensationTable } from "../components/CompensationTable";
 import { DailyTable } from "../components/DailyTable";
+import { ExportCsvButtons } from "../components/ExportCsvButtons";
+import { PageHeader } from "../components/PageHeader";
 import { PeriodPicker } from "../components/PeriodPicker";
 import { PredictiveBanner } from "../components/PredictiveBanner";
+import { ScheduleBanner } from "../components/ScheduleBanner";
 import { StatCard } from "../components/StatCard";
 import { TeamAuditTable } from "../components/TeamAuditTable";
 import { useAuth } from "../context/AuthContext";
@@ -19,17 +22,6 @@ import {
   todayIso,
 } from "../utils/period";
 import { sourceLabel, sourceTone } from "../utils/source";
-
-function fmtNextRun(iso: string) {
-  return new Date(iso).toLocaleString("vi-VN", {
-    weekday: "long",
-    day: "2-digit",
-    month: "2-digit",
-    year: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-  });
-}
 
 export function DashboardPage() {
   const { user } = useAuth();
@@ -186,58 +178,38 @@ export function DashboardPage() {
 
   return (
     <div className="page">
-      <header className="page-header">
-        <div>
-          <h1>{isQa ? "Đối soát logwork QA" : isMonth ? "Tổng hợp tháng" : "Tổng hợp tuần"}</h1>
-          <p className="muted page-subtitle">
+      <PageHeader
+        title={isQa ? "Đối soát logwork QA" : isMonth ? "Tổng hợp tháng" : "Tổng hợp tuần"}
+        subtitle={
+          <>
             Dữ liệu trực tiếp từ <strong>jira.tinhvan.com</strong> — ProjectTimesheet plugin
-          </p>
-          <PeriodPicker value={period} onChange={setPeriod} />
-          {displaySummary?.data_source && (
-            <span className={`source-badge tone-${sourceTone(displaySummary.data_source)}`}>
-              Nguồn: {sourceLabel(displaySummary.data_source)}
-            </span>
-          )}
-          {displaySummary && isPastPeriod && (
-            <p className="muted as-of-hint">
-              Kỳ {fmtRangeVi(displaySummary.week_start, displaySummary.week_end)}
-            </p>
-          )}
-          {displaySummary && isPartialPeriod && !isPastPeriod && (
-            <p className="muted as-of-hint">
-              Hiển thị đến {fmtDateVi(displaySummary.as_of)} — ngày chưa tới không tính
-            </p>
-          )}
-          <div className="export-actions">
-            <button
-              type="button"
-              className="btn-secondary btn-sm"
-              disabled={!!exporting || busy}
-              onClick={() => handleExport("summary")}
-            >
-              {exporting === "summary" ? "Đang tải…" : isQa ? "Export CSV team" : "Export CSV của tôi"}
-            </button>
-            <button
-              type="button"
-              className="btn-secondary btn-sm"
-              disabled={!!exporting || busy}
-              onClick={() => handleExport("compensation")}
-            >
-              {exporting === "compensation" ? "Đang tải…" : isQa ? "Export bù trừ team" : "Export bù trừ"}
-            </button>
-          </div>
-        </div>
-
-        {schedule && (
-          <div className="schedule-banner">
-            <span>📅 Job nhắc — 17:00 {schedule.day_of_week_vi}</span>
-            <strong>{fmtNextRun(schedule.next_run_at)}</strong>
-            {!schedule.scheduler_enabled && schedule.scheduler_configured && (
-              <small className="muted">Scheduler tắt trên server</small>
-            )}
-          </div>
+          </>
+        }
+        aside={schedule ? <ScheduleBanner schedule={schedule} /> : undefined}
+      >
+        <PeriodPicker value={period} onChange={setPeriod} />
+        {displaySummary?.data_source && (
+          <span className={`source-badge tone-${sourceTone(displaySummary.data_source)}`}>
+            Nguồn: {sourceLabel(displaySummary.data_source)}
+          </span>
         )}
-      </header>
+        {displaySummary && isPastPeriod && (
+          <p className="muted as-of-hint">
+            Kỳ {fmtRangeVi(displaySummary.week_start, displaySummary.week_end)}
+          </p>
+        )}
+        {displaySummary && isPartialPeriod && !isPastPeriod && (
+          <p className="muted as-of-hint">
+            Hiển thị đến {fmtDateVi(displaySummary.as_of)} — ngày chưa tới không tính
+          </p>
+        )}
+        <ExportCsvButtons
+          exporting={exporting}
+          disabled={busy}
+          isQa={isQa}
+          onExport={handleExport}
+        />
+      </PageHeader>
 
       {isQa && teamLoading && (
         <div className="alert alert-info jira-sync-banner">

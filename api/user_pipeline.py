@@ -429,6 +429,13 @@ def reconcile_for_user(
             monthly=True,
         )
 
+    if period_start and period_end:
+        return _run_period(
+            load_user_period(
+                user, creds, period_start, period_end, account_id=account_id,
+            ),
+        )
+
     anchor = period_start if period_start else anchor_date
     return _run(load_user_week(user, creds, anchor_date=anchor, account_id=account_id))
 
@@ -447,6 +454,9 @@ def reconcile_for_team(
         year, mon = parse_month(month)
         ps, pe = month_range(year, mon)
         return _run_period(load_team_period(creds, ps, pe), monthly=True)
+
+    if period_start and period_end:
+        return _run_period(load_team_period(creds, period_start, period_end))
 
     anchor = period_start if period_start else anchor_date
     return _run(load_team_week(creds, anchor_date=anchor))

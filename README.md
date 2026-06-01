@@ -2,13 +2,13 @@
 
 Hệ thống rule-based đối soát logwork Jira (Đề bài số 5).
 
-**UI công khai (GitHub Pages):** https://duc1205.github.io/logwork/  
-**Repo:** https://github.com/duc1205/logwork  
-**Hướng dẫn bật Pages + API cho nhiều người:** [docs/GITHUB_PAGES.md](./docs/GITHUB_PAGES.md)
+**Repo GitLab:** https://gitlabtv.tinhvan.com/tvs-tinhvan-solution/tvs/tvh-ai/jira-report
 
-**Tài liệu đầy đủ (giải thích source, CLI, nghiệp vụ):** [TAI_LIEU_SOURCE.md](./TAI_LIEU_SOURCE.md)
+**Hướng dẫn chạy trên máy local:** [docs/CHAY_LOCAL.md](./docs/CHAY_LOCAL.md)
 
-## Quick start
+**Tài liệu source / nghiệp vụ:** [TAI_LIEU_SOURCE.md](./TAI_LIEU_SOURCE.md)
+
+## Quick start (CLI)
 
 ```bash
 python -m logwork test
@@ -17,55 +17,29 @@ python -m logwork reconcile --month 2026-05
 python -m logwork schedule --job monthly_close --month 2026-05
 ```
 
-## Chia sẻ trong công ty (LAN test)
+> Lệnh `python -m logwork` cần thư mục repo tên **`logwork`** và chạy lệnh từ **thư mục cha** (vd. `d:\`). Xem [docs/CHAY_LOCAL.md](./docs/CHAY_LOCAL.md).
+
+## Web UI (nhanh nhất)
 
 ```powershell
-cd d:\TINHVAN\HVKHQS-AI
+cd d:\
+.\logwork\scripts\run_dev.ps1
+```
+
+Mở http://localhost:5173 — đăng nhập username + mật khẩu Jira.
+
+## Chia sẻ trong LAN (đồng nghiệp test)
+
+```powershell
+cd d:\
 .\logwork\scripts\run_lan.ps1
 ```
 
-Gửi link `http://<IP-máy-bạn>:5173/` cho đồng nghiệp cùng WiFi/VPN. Chi tiết: [ui/README.md](./ui/README.md)
+Gửi link `http://<IP-máy-bạn>:5173/`. Chi tiết: [ui/README.md](./ui/README.md)
 
-## Web UI (React)
+## Tính năng chính
 
-```bash
-# Chỉ localhost (mở 2 cửa sổ API + UI)
-.\logwork\scripts\run_dev.ps1
-
-# Hoặc thủ công (repo tại d:\logwork → chạy từ thư mục cha d:\):
-pip install -r logwork/requirements-api.txt
-cd d:\
-$env:LOGWORK_DISABLE_SCHEDULER="1"
-$env:LOGWORK_DATA_DIR="d:\logwork\fixtures\live"
-python -m uvicorn logwork.api.main:app --host 127.0.0.1 --port 8000 --reload
-
-cd logwork/ui && npm install && npm run dev
-```
-
-Nếu dashboard báo **Internal Server Error**: kiểm tra `GET /api/health` → `data_dir` phải trỏ tới thư mục có `config.json` (vd. `d:\logwork\fixtures\live`). Biến môi trường `LOGWORK_DATA_DIR` cũ (path `TINHVAN` đã xóa) sẽ gây lỗi — xóa trong Windows env hoặc để script `run_dev.ps1` ghi đè.
-
-- Login: **username + password Jira** (jira.tinhvan.com) — **100% dữ liệu Jira**, không mock
-- Phân quyền (env server, **không** phải Administrator Jira):
-  - **employee** — chỉ dữ liệu cá nhân (mặc định)
-  - **QA** (`LOGWORK_QA_USERS`) — đối soát team, golden, job nhắc
-  - **cấu hình** (`LOGWORK_ADMIN_USERS`) — QA + trang Cấu hình
-- Cấu hình: `fixtures/live/` (config, ngày lễ, roster CSV tùy chọn)
-- Dashboard: lấy logwork thật qua **ProjectTimesheet plugin** + nghỉ phép từ **Effort/Holiday**
-- Chọn kỳ: **theo tuần** (Từ ngày → Đến ngày T2–CN) hoặc **theo tháng** (01 → cuối tháng)
-- **Export CSV** summary/compensation (format golden QA)
-- **Cấu hình** (admin): mức phạt/MD, ngày nghỉ lễ, **quy tắc OT** + đăng ký OT duyệt — lưu `fixtures/live/`
-- **Job nhắc (17h T4)**: tự chạy qua APScheduler · gửi email SMTP — cấu hình `JIRA_USERNAME` + `LOGWORK_SMTP_*` trên server (dev: `LOGWORK_DISABLE_SCHEDULER=1`)
-
-Chi tiết: [ui/README.md](./ui/README.md)
-
-## UI trên GitHub Pages
-
-Workflow [`.github/workflows/deploy-ui.yml`](./.github/workflows/deploy-ui.yml) publish UI tại **https://duc1205.github.io/logwork/**
-
-1. Đợi Actions **Deploy UI** chạy xanh → **Settings** → **Pages** → branch **`gh-pages`** / root
-2. **Actions** → **Variables** → `VITE_API_BASE_URL` = URL FastAPI public (bắt buộc)
-3. Server API: `LOGWORK_ALLOW_LAN=1` hoặc `LOGWORK_CORS_ORIGINS` có `https://duc1205.github.io`
-
-Pages chỉ host UI tĩnh — API uvicorn chạy riêng (tunnel/VPS).
-
-Hoặc sửa `ui/public/config.json` (`apiBaseUrl`) rồi push — không cần rebuild nếu chỉ đổi URL API.
+- Login Jira live (jira.tinhvan.com), worklog qua ProjectTimesheet
+- Phân quyền server: `LOGWORK_QA_USERS`, `LOGWORK_ADMIN_USERS`
+- Dashboard tuần/tháng, heatmap, golden QA, export CSV, cấu hình OT/phạt MD
+- Job nhắc 17h T4 (tắt khi dev: `LOGWORK_DISABLE_SCHEDULER=1`)

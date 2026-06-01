@@ -55,9 +55,5 @@ export function apiEndpointLabel(): string {
   if (resolvedBase) {
     return resolvedBase;
   }
-  return "Chưa cấu hình (thiếu VITE_API_BASE_URL hoặc config.json)";
-}
-
-export function isApiConfigured(): boolean {
-  return import.meta.env.DEV || resolvedBase.length > 0;
+  return "Chưa kết nối — chạy API :8001 và npm run dev (hoặc npm run preview)";
 }

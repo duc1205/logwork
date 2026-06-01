@@ -1,5 +1,5 @@
-# Tunnel chi API (port 8001) — dung voi UI tren GitHub Pages
-# UI: https://duc1205.github.io/logwork/  +  config.json / VITE_API_BASE_URL = link tunnel
+# Tunnel API (port 8001) — demo cho dong nghiep khac mang (khong can hotspot)
+# UI van chay npm run dev:lan hoac chi can URL API trong config UI build san
 #
 # Terminal 1 — API:
 #   cd d:\
@@ -8,7 +8,7 @@
 #   $env:LOGWORK_ALLOW_LAN="1"
 #   python -m uvicorn logwork.api.main:app --host 127.0.0.1 --port 8001
 #
-# Terminal 2 — tunnel:
+# Terminal 2:
 #   .\logwork\scripts\run_tunnel_api.ps1
 
 $ErrorActionPreference = "Stop"
@@ -31,9 +31,7 @@ if (-not $cf) {
 $cfExe = if ($cf.Source) { $cf.Source } else { $cf.FullName }
 
 Write-Host "Tunnel API http://127.0.0.1:$apiPort -> trycloudflare.com"
-Write-Host "Dat URL (khong co / cuoi) vao:"
-Write-Host "  - GitHub: Settings -> Actions -> Variables -> VITE_API_BASE_URL"
-Write-Host "  - hoac ui/public/config.json -> apiBaseUrl"
+Write-Host "Neu host UI build san: dat URL (khong / cuoi) vao ui/public/config.json -> apiBaseUrl"
 Write-Host ""
 
 & $cfExe tunnel --url "http://127.0.0.1:$apiPort"

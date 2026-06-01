@@ -1,6 +1,6 @@
 import { FormEvent, useState } from "react";
 import { Navigate, useSearchParams } from "react-router-dom";
-import { apiEndpointLabel, isApiConfigured } from "../api/base";
+import { apiEndpointLabel } from "../api/base";
 import { ApiError } from "../api/client";
 import { useAuth } from "../context/AuthContext";
 
@@ -38,17 +38,6 @@ export function LoginPage() {
           <h1>Logwork QA Audit</h1>
           <p>Nhân viên xem tổng hợp cá nhân · QA đối soát team · Cấu hình hệ thống (theo danh sách env)</p>
         </div>
-
-        {!isApiConfigured() && (
-          <div className="alert alert-warn">
-            <strong>Chưa có URL API public.</strong> GitHub Pages không gọi được{" "}
-            <code>localhost</code>. Trên máy bạn: chạy API (:8001) +{" "}
-            <code>cloudflared tunnel --url http://127.0.0.1:8001</code> → copy link{" "}
-            <code>https://….trycloudflare.com</code> vào{" "}
-            <code>ui/public/config.json</code> (<code>apiBaseUrl</code>) → push{" "}
-            <code>main</code> → đợi Actions deploy (~1 phút).
-          </div>
-        )}
 
         <p className="muted login-api-hint">
           API: <code>{apiEndpointLabel()}</code>
